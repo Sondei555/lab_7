@@ -1,0 +1,43 @@
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.block {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid #666;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.left {
+  background-color: #d1c4e9;
+}
+
+.center {
+  background-color: #b2dfdb;
+  height: 70%;
+  overflow-y: auto;
+}
+
+.right {
+  background-color: #ffe082;
+}
+
+.rotated {
+  transform: rotate(3deg);
+}
