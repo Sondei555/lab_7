@@ -1,43 +1,65 @@
-
-body {
-  margin: 0;
-  font-family: sans-serif;
-  background-color: #f5f5f5;
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.container {
-  width: 100%;
-  text-align: center;
-  margin-top: 20px;
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #888;
 }
 
 .block {
-  display: inline-block;
-  vertical-align: top;
-  width: 30%;
-  height: 300px;
-  margin: 10px;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 2px solid #666;
-  border-radius: 10px;
-  background-color: #fff;
+    border: 2px solid #333;
+    box-sizing: border-box; 
+    padding: 10px;
+    color: #333;
+    text-align: center;
 }
 
-.left {
-  background-color: #d1c4e9;
+.header-block, .footer-block {
+    background-color: #f7d747; 
+    height: 15vh; 
+    width: 100%;
 }
 
-.center {
-  background-color: #b2dfdb;
-  height: 70%;
-  overflow-y: auto;
+.middle-row {
+    height: 70vh; 
+    width: 100%;
+    white-space: nowrap; 
+    font-size: 0; 
 }
 
-.right {
-  background-color: #ffe082;
+.content-block {
+    display: inline-block; 
+    height: 100%;
+    font-size: 16px; 
+    vertical-align: top;
+    padding: 15px;
 }
 
-.rotated {
-  transform: rotate(3deg);
+.block-2 { width: 25%; background-color: #366fa9; color: white; } 
+.block-3 { width: 25%; background-color: #f06292; color: white; } 
+.block-4 { width: 25%; background-color: #fff; } 
+.block-5 { width: 25%; background-color: #366fa9; color: white; } 
+
+.block-scroll {
+    overflow: auto; 
+    text-align: left;
+    padding: 15px;
 }
+
+.block-rotated {
+    transition: transform 0.3s;
+}
+
+.block-rotated:hover {
+    transform: rotate(-5deg); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+h2 { margin-top: 0; font-size: 1.5em; }
+.specials { font-size: 1.2em; font-weight: bold; margin-bottom: 5px; }
+ul { text-align: left; }
